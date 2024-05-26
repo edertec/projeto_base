@@ -1,0 +1,36 @@
+<!-- person_form.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" type="text/css" href="css/person_form.css">
+</head>
+<body>
+    <div class="cadastro-container">
+        <h1>Cadastro de Usuário</h1>
+        <form id="cadastro-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="photo">Link da Foto de Perfil:</label>
+            <input type="url" id="photo" name="photo"><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+        <button id="atualizar-foto">Atualizar Foto</button>
+        <div id="foto-preview">
+            <img id="foto-usuario" src="" alt="Foto do Usuário" style="display:none;">
+        </div>
+        <div class="links">
+            <a href="login.html">Voltar ao Login</a>
+        </div>
+    </div>
+    <script src="js/person_form.js"></script>
+</body>
+</html>

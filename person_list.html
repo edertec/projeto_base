@@ -1,0 +1,36 @@
+<!-- person_list.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pessoas</title>
+    <link rel="stylesheet" type="text/css" href="css/person_list.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Pessoas</h1>
+        <table id="personTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Pessoas serão adicionadas aqui -->
+            </tbody>
+        </table>
+        <div class="charts">
+            <h2>Gráficos</h2>
+            <canvas id="ageChart" width="400" height="200"></canvas>
+        </div>
+        <div class="external-data">
+            <h2>Dados Externos</h2>
+            <div id="weatherData"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/person_list.js"></script>
+</body>
+</html>
